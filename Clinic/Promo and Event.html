@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Event & Promo</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ================== GLOBAL STYLE ================== */
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #FEFFDE;
+    color: #2f3e2e;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* ================== COLOR SYSTEM ================== */
+:root {
+    --cream: #FEFFDE;
+    --mint: #DDFFBC;
+    --green-soft: #91C788;
+    --green-dark: #52734D;
+}
+
+/* ================= PROMO SECTION ================= */
+.promo-section {
+    padding: 100px 6% 60px;
+    background-color: #FEFFDE;
+}
+
+.promo-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.promo-header h2 {
+    font-size: 38px;
+    color: #52734D;
+    margin-bottom: 14px;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+.promo-card {
+    background-color: #DDFFBC;
+    border-radius: 20px;
+    padding: 26px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0,0,0,0.08);
+}
+
+.promo-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #52734D;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 18px;
+    font-weight: 600;
+}
+
+.promo-title {
+    font-size: 20px;
+    color: #52734D;
+    margin-bottom: 10px;
+}
+
+.promo-desc {
+    margin-bottom: 16px;
+}
+
+.promo-benefit span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+/* ================= EVENT SECTION ================= */
+.event-section {
+    padding: 100px 6%;
+    background-color: #91C788;
+}
+
+.event-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 70px;
+    color: #ffffff;
+}
+
+.event-header h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.event-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #FEFFDE;
+    border-radius: 26px;
+    padding: 50px;
+}
+
+.event-title {
+    font-size: 26px;
+    color: #52734D;
+    margin-bottom: 12px;
+}
+
+.event-desc {
+    margin-bottom: 22px;
+}
+
+.event-prevention {
+    margin-bottom: 30px;
+}
+
+.event-prevention li {
+    margin-bottom: 8px;
+}
+
+/* ===== EVENT GRID 3 KOLOM ===== */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+@media (max-width: 992px) {
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.event-card {
+    background-color: #FEFFDE;
+    border-radius: 22px;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 36px rgba(0,0,0,0.08);
+}
+
+.event-card h3 {
+    font-size: 22px;
+    color: #52734D;
+    margin-bottom: 12px;
+}
+
+.event-card ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.event-card li {
+    margin-bottom: 6px;
+}
+
+.event-poster {
+    width: 100%;
+    aspect-ratio: 1 / 1;        
+    border-radius: 18px;
+    border: 2px dashed #91C788;
+    overflow: hidden;
+    background-color: #FEFFDE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+</style>
+
+<main class="main">
+
+<section class="promo-section">
+
+    <div class="promo-header">
+        <h2>Promo Layanan Klinik</h2>
+        <p>Program promo layanan kesehatan dengan harga dan fasilitas khusus untuk masyarakat</p>
+    </div>
+
+    <div class="promo-grid">
+
+        <!-- PROMO 1 -->
+        <div class="promo-card">
+            <div class="promo-label">20%</div>
+            <h3 class="promo-title">Scaling gigi</h3>
+            <p class="promo-desc">Periode 1 Februari-28 Februari 2025. Syarat dan ketentuan berlaku.</p>
+            <div class="promo-benefit">
+                <span>✔ Berlaku untuk pasien umum pembayaran tunai</span>
+                <span>✔ Pemeriksaan dilakukan oleh Dokter Gigi Umum</span>
+                <span>✔ Berlaku di semua Klinik Semen Gresik</span>
+            </div>
+        </div>
+
+        <!-- PROMO 2 -->
+        <div class="promo-card">
+            <div class="promo-label">10%</div>
+            <h3 class="promo-title">Jumat Berkah</h3>
+            <p class="promo-desc">Diskon laboratorium periode 15 Maret-30 Desember 2025 setiap Jumat. Syarat dan ketentuan berlaku.</p>
+            <div class="promo-benefit">
+                <span>✔ Berlaku untuk pasien umum pembayaran tunai</span>
+                <span>✔ Hanya untuk item tertentu</span>
+                <span>✔ Promo ini tidak dapat digabungkan dengan promo lainnya</span>
+            </div>
+        </div>
+
+        <!-- PROMO 3 -->
+        <div class="promo-card">
+            <div class="promo-label">30%</div>
+            <h3 class="promo-title">Surat Sehat</h3> 
+            <p class="promo-desc">Diskon medical check up periode 9 April-30 Juni 2024. Layanan tersebut mencakup:</p>
+            <div class="promo-benefit">
+                <span>✔ Pemeriksaan dokter</span>
+                <span>✔ Golongan darah</span>
+                <span>✔ Narkoba 3 parameter</span>
+            </div>
+        </div>
+
+        <!-- PROMO 4 -->
+        <div class="promo-card">
+            <div class="promo-label">25%</div>
+            <h3 class="promo-title">Dokter Umum</h3>
+            <p class="promo-desc">Layanan pemeriksaan kesehatan dengan Dokter Umum. Syarat dan ketentuan berlaku.</p>
+            <div class="promo-benefit">
+                <span>✔ Berlaku untuk pasien umum pembayaran tunai</span>
+                <span>✔ Berlaku untuk item tertentu</span>
+                <span>✔ Promo ini tidak dapat digabungkan dengan promo lainnya</span>
+            </div>
+        </div>
+
+        <!-- PROMO 5 -->
+        <div class="promo-card">
+            <div class="promo-label">20%</div>
+            <h3 class="promo-title">Dokter Spesialis</h3>
+            <p class="promo-desc">Layanan pemeriksaan kesehatan dengan Dokter Spesialis. Syarat dan ketentuan berlaku.</p>
+            <div class="promo-benefit">
+                <span>✔ Berlaku untuk pasien umum pembayaran tunai</span>
+                <span>✔ Berlaku untuk item tertentu</span>
+                <span>✔ Promo ini tidak dapat digabungkan dengan promo lainnya</span>
+                <span>✔ Promo ini berlaku untuk spesialis jantung, penyakit dalam dan saraf</span>
+            </div>
+        </div>
+
+        <!-- PROMO 6 -->
+        <div class="promo-card">
+            <div class="promo-label">25%</div>
+            <h3 class="promo-title">Tropical Fluoride</h3>
+            <p class="promo-desc">Periode 26 Desember-31 Januari 2025. Syarat dan ketentuan berlaku.</p>
+            <div class="promo-benefit">
+                <span>✔ Berlaku untuk pasien umum pembayaran tunai</span>
+                <span>✔ Pemeriksaan dilakukan oleh Dokter Gigi Umum</span>
+                <span>✔ Berlaku di semua Klinik Semen Gresik</span>
+            </div>
+        </div>
+
+        <!-- PROMO 7 -->
+        <div class="promo-card">
+            <div class="promo-label">20+25%</div>
+            <h3 class="promo-title">Paket Sehat 1</h3>
+            <p class="promo-desc">Periode 1 Februari-28 Februari 2025. Layanan tersebut mencakup:</p>
+            <div class="promo-benefit">
+                <span>✔ Pemeriksaan fisik</span>
+                <span>✔ Asam urat</span>
+                <span>✔ Gula darah puasa</span>
+                <span>✔ Gula darah 2 JPP</span>
+                <span>✔ Kolestrol LDL dan HDL</span>
+                <span>✔ Trigliserida</span>
+            </div>
+        </div>
+
+        <!-- PROMO 8 -->
+        <div class="promo-card">
+            <div class="promo-label">20+25%</div>
+            <h3 class="promo-title">Paket Sehat 2</h3>
+            <p class="promo-desc">Periode 1 Februari-28 Februari 2025. Layanan tersebut mencakup:</p>
+            <div class="promo-benefit">
+                <span>✔ Pemeriksaan fisik</span>
+                <span>✔ Kreatinin</span>
+                <span>✔ Gula darah puasa</span>
+                <span>✔ HBA1C</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="event-section">
+
+    <div class="event-header">
+        <h2>Event Edukasi Kesehatan</h2>
+        <p>Peringatan hari kesehatan sebagai bentuk edukasi dan kepedulian terhadap masyarakat</p>
+    </div>
+
+    <div class="event-grid">
+
+        <!-- EVENT 1 -->
+        <div class="event-card">
+            <h3>Hari PPOK Sedunia</h3>
+            <p>PPOK adalah penyakit paru-paru jangka panjang yang menyebabkan saluran napas menyempit, sehingga penderitanya sulit bernapas. Penyakit ini biasanya berkembang perlahan dan sering dialami oleh perokok. Cara mencegah PPOK:</p>
+            <ul>
+                <li>Berhenti merokok dan hindari rokok</li>
+                <li>Kurangi paparan polusi udara dengan menggunakan masker</li>
+                <li>Rutin olahraga ringan untuk menjaga fungsi paru</li>
+            </ul>
+           <div class="event-poster">
+            <img src="assets/img/health/POSTER 1.jpeg" alt="Poster PPOK">
+          </div>
+      </div>    
+        <!-- EVENT 2 -->
+        <div class="event-card">
+            <h3>Hari AIDS Sedunia</h3>
+            <p>AIDS (Acquired Immune Deficiency Syndrome) adalah tahap lanjut dari infeksi HIV yang menyebabkan sistem kekebalan tubuh sangat lemah, sehingga penderita mudah terkena berbagai penyakit infeksi serius.</p>
+            <ul>
+                <li>Setia pada satu pasangan dan mengunakan kondom saat berhubungan seksual</li>
+                <li>Tidak berbagi jarum sentik pada penggunaan narkoba atau alat medis yang tidak steril</li>
+                <li>Tes HIV secara rutin</li>
+            </ul>
+            <div class="event-poster">
+            <img src="assets/img/health/POSTER 2.jpeg" alt="Poster PPOK">
+          </div>
+      </div>    
+
+        <!-- EVENT 3 -->
+        <div class="event-card">
+            <h3>Hari Diabetes Sedunia</h3>
+            <p>Diabetes adalah penyakit kronis yang terjadi ketika kadar gula darah terlalu tinggi karena tubuh tidak cukup memproduksi insulin atau tidak dapat menggunakan insulin dengan efektif.</p>
+            <ul>
+                <li>Kurangi gula berlebih, makanan cepas saji dan minuman manis</li>
+                <li>Rutin berolahraga minimal 30 menit sehari</li>
+                <li>Menjaga berat badan agar tetap ideal</li>
+            </ul>
+            <div class="event-poster">
+            <img src="assets/img/health/POSTER 3.jpeg" alt="Poster PPOK">
+          </div>
+      </div>    
+
+        <!-- EVENT 4 -->
+        <div class="event-card">
+            <h3>Hari Stroke Sedunia</h3>
+            <p>Stroke adalah penyakit yang terjadi ketika aliran darah ke otak terganggu atau terhenti, sehingga sel-sel otak kekurangan oksigen dan nutrisi.</p>
+            <ul>
+                <li>Mengonsumsi makanan bergizi seimbang, rendah lemak dan garam</li>
+                <li>Rutin memeriksa penyakit-penyakit yang beresiko memicu stroke</li>
+                <li>Mengurangi stress</li>
+            </ul>
+            <div class="event-poster">
+            <img src="assets/img/health/POSTER 4.jpeg" alt="Poster PPOK">
+          </div>
+      </div> 
+
+        <!-- EVENT 5 -->
+        <div class="event-card">
+            <h3>Hari Meningitis Sedunia</h3>
+            <p>Meningitis adalah penyakit peradangan pada selaput otak dan sumsum tulang belakang yang biasanya disebabkan oleh infeksi virus, bakteri, atau jamur.</p>
+            <ul>
+                <li>Memperoleh vaksinasi lengkap</li>
+                <li>Rutin cuci tangan, tidak berbagai alat makan dan menjaga kebersihan</li>
+                <li>Mengonsumsi makanan bergizi dan istirahat yang cukup untuk menjaga daya tahan tubuh</li>
+            </ul>
+            <div class="event-poster">
+            <img src="assets/img/health/POSTER 5.jpeg" alt="Poster PPOK">
+          </div>
+      </div> 
+
+        <!-- EVENT 6 -->
+        <div class="event-card">
+            <h3>Hari Osteoporosis Sedunia</h3>
+            <p>Osteoporosis adalah penyakit tulang yang menyebabkan tulang menjadi keropos, rapuh, dan mudah patah karena kepadatan tulang menurun.</p>
+            <ul>
+                <li>Mengkonsumsi sumber makanan yang kaya akan vitamin D dan berjemur di pagi hari</li>
+                <li>Rutin olahraga terutama olahraga beban</li>
+                <li>Hindari rokok dan alkohol</li>
+            </ul>
+            <div class="event-poster">
+            <img src="assets/img/health/POSTER 6.jpeg" alt="Poster PPOK">
+          </div>
+    </div>
+</section>
+
+</body>
+</html>
