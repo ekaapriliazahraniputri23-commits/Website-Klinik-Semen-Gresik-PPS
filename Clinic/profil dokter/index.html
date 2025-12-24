@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <!-- title -->
+    <title>carousel slider</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+<!--background on here-->
+<!-- HERO SECTION -->
+<div class="hero_section">
+
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop playsinline>
+    <source src="img/Video Project 4.mp4" type="video/mp4">
+  </video>
+
+
+
+<!--end of background-->
+
+    <!-- card area start -->
+    <div class="card_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="head_text">Profil Dokter</h2>
+                    <h2 class="head_text">dan Jadwal Praktek</h2>
+                </div>
+                <div class="col-12">
+                    <div class="owl-carousel slider_carousel">
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_193215_0000.png" alt="">
+                            <div class="card_text">
+                                <h4>dr. Nur Lailatul Fadhilah, Sp.OG., M.Ked.Klin</h4>
+                                <p>Dokter Spesialis Obstetri dan Ginekologi (Obgyn)</p>
+                            </div>
+                        </div>
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_131124_0001.png" alt="">
+                            <div class="card_text">
+                                <h4>dr. Hartantyo Kusuma, Sp.A</h4>
+                                <p>Dokter Spesialis Anak (Pediatri)</p>
+                            </div>
+                        </div>
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_131124_0002.png" alt="">
+                            <div class="card_text">
+                                <h4>dr. Ronaldi Rizkiawan, Sp.JP</h4>
+                                <p>Dokter Spesialis Jantung dan Pembuluh Darah</p>
+                            </div>
+                        </div>
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_131124_0003.png" alt="">
+                            <div class="card_text">
+                                <h4> dr. Caesar Ayudi, Sp.PD</h4>
+                                <p>Dokter Spesialis Penyakit Dalam</p>
+                            </div>
+                        </div>
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_131125_0004.png" alt="">
+                            <div class="card_text">
+                                <h4>dr. Sumartono, Sp.N</h4>
+                                <p>Dokter Spesialis Saraf (Neurologi)</p>
+                            </div>
+                        </div>
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_131125_0005.png" alt="">
+                            <div class="card_text">
+                                <h4>drg. Annisa Ilmi Y., Sp.KG</h4>
+                                <p>Dokter Spesialis Konservasi Gigi</p>
+                            </div>
+                        </div>
+                        <div class="card_box">
+                            <img class="img-fluid w-100" src="img/Senin-Rabu_ 17.00-19.00_20251224_131125_0006.png" alt="">
+                            <div class="card_text">
+                                <h4>dr. Anindita Kesumo, Sp.THTBKL</h4>
+                                <p>Spesialis THT – Bedah Kepala Leher</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- card area end -->
+
+    <!-- all js here -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/responsivemobile.js"></script>
+    <script>
+        
+        function slider_carouselInit() {
+            $('.owl-carousel.slider_carousel').owlCarousel({
+                dots: false,
+                loop: true,
+                margin: 30,
+                stagePadding: 2,
+                autoplay: false,
+                nav: true,
+                navText: ["<i class='far fa-arrow-alt-circle-left'></i>","<i class='far fa-arrow-alt-circle-right'></i>"],
+                autoplayTimeout: 1500,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2,
+                    },
+                    992: {
+                        items: 5
+                    }
+                }
+            });
+        }
+        slider_carouselInit();
+
+    </script>
+</body>
+</html>
